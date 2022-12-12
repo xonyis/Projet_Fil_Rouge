@@ -38,7 +38,7 @@ nav a {
     color: #102b3f;
     font-family: var(--font-intit);
     font-size: 1.5em;
-    font-weight: 300;
+    font-weight: 700;
     letter-spacing: 1px;
     display: block;
   position: relative;
@@ -51,7 +51,8 @@ nav a::after {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 0.05em;
+    height: 0.1em;
+    border-radius: 25px;
     background-color: var(--dark);
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
@@ -166,7 +167,7 @@ nav a:hover::after,
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    animation: 5s slideL;
+    animation: 4s slideL;
 }
 
 .div1 img {
@@ -180,7 +181,7 @@ nav a:hover::after,
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: 5s slideUp;
+    animation: 4s slideUp;
 }
 
 .div2 img {
@@ -192,7 +193,7 @@ nav a:hover::after,
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: 5s slideDown;
+    animation: 4s slideDown;
 }
 
 .div3 img {
@@ -205,7 +206,7 @@ nav a:hover::after,
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: 5s slideR;
+    animation: 4s slideR;
 }
 
 .div4 img {
@@ -356,4 +357,70 @@ nav a:hover::after,
 
 .brkContainer div img {
     width: 100%;
+}
+
+
+/* FOOTER */
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    width: 100%;
+    background: 
+    linear-gradient(180deg, var(--champagne), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(200deg, var(--purple),rgba(0, 255, 0, 0) 70.71%), 
+    linear-gradient(10deg, var(--purple), rgba(0, 0, 255, 0) 70.71%),
+    linear-gradient(360deg, var(--dark), rgba(0, 0, 255, 0) 70.71%);
+}
+
+#footer-container{
+    background-color: rgba(16, 43, 63, 0.3);
+    border-radius: 20px;
+    width: 60%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-content {
+    font-family: var(--font-intit);
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: rgba(240, 248, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    height: 40vh;
+}
+
+#footer-content a:first-child {
+    padding: 0.7em 0.5em;
+    width: 100px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.9);
+    background: var(--dark);
+    font-size: 0.7em;
+    font-weight: 700;
+    margin-right: 5em;
+}
+
+#footer-content div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-content a{
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.9);
+    align-items: center;
+
 }
