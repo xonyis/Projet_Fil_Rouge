@@ -100,6 +100,11 @@ nav a:hover::after,
     font-size: 3em;
 }
 
+.split span {
+    text-transform: uppercase;
+    color: var(--purple);
+}
+
 .split div {
     margin-right: 40em;
     position: absolute;
@@ -208,7 +213,10 @@ nav a:hover::after,
     width: 100%;
     height: 50vh;
     display: flex;
-    background: #FAF8F4;
+    background: linear-gradient(180deg, white, rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(200deg, var(--pastel),rgba(0, 255, 0, 0) 70.71%), 
+    linear-gradient(10deg, var(--pastel), rgba(0, 0, 255, 0) 70.71%),
+    linear-gradient(360deg, var(--pastel), rgba(0, 0, 255, 0) 70.71%);
 }
 
 .barImg img{
@@ -237,6 +245,7 @@ nav a:hover::after,
     text-decoration: none;
     padding: 1em;
     font-size: 1.2em;
+    border: 2px solid var(--dark);
     border-radius: 25px;
     color: var(--dark);
     background: var(--pastel);
@@ -246,6 +255,7 @@ nav a:hover::after,
 #textBar a:hover {
     color: var(--champagne);
     background: var(--purple);
+    border-color: var(--champagne);
 }
 /* ======= */
 
@@ -261,7 +271,7 @@ nav a:hover::after,
     height: 45vh;
     background: 
     linear-gradient(180deg, var(--pastel), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(200deg, white,rgba(0, 255, 0, 0) 70.71%), 
+    linear-gradient(220deg, white,rgba(0, 255, 0, 0) 50.71%), 
     linear-gradient(10deg, #FAF8F4, rgba(0, 0, 255, 0) 70.71%),
     linear-gradient(360deg, #FAF8F4, rgba(0, 0, 255, 0) 70.71%);
 }
@@ -282,7 +292,7 @@ nav a:hover::after,
 
 .cardContainer {
     
-    width: 75%;
+    width: 85%;
     height: 100%;
     margin: auto;
     display: flex;
@@ -290,7 +300,7 @@ nav a:hover::after,
 }
 
 .cardItems {
-    width: 24.5%;
+    width: 23.5%;
     height: 75%;
     background: rgba(149, 127, 239,0.2);
    display: flex;
@@ -298,10 +308,21 @@ nav a:hover::after,
    align-items: center;
    flex-direction: column;
    transition: 0.3s ease-in-out;
+   box-shadow: -7px 7px 5px  rgba(123, 104, 199, 0.2);
+
 }
 
 .cardItems:hover {
     transform: translateY(-5%);
+    box-shadow: -12px 24px 7px  rgba(123, 104, 199, 0.2);
+}
+.cardItems:nth-child(n+2) {
+    box-shadow: 7px 7px 5px  rgba(123, 104, 199, 0.2);
+}
+
+.cardItems:hover:nth-child(n+2) {
+    transform: translateY(-5%);
+    box-shadow: 12px 24px 7px  rgba(123, 104, 199, 0.2);
 }
 
 .cardItems img {
@@ -318,8 +339,8 @@ nav a:hover::after,
     transition: .7s ease;
 }
 /* === */
-.cardItems a:hover {
-    color: #6247aa;
+.cardItems:hover a {
+    color: var(--purple);
 }
 /* === */
 .cardItems p {
