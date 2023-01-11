@@ -310,17 +310,17 @@ nav a:hover::after,
    transition: 0.3s ease-in-out;
    box-shadow: -7px 7px 5px  rgba(123, 104, 199, 0.2);
 
-}
+} 
 
 .cardItems:hover {
     transform: translateY(-5%);
     box-shadow: -12px 24px 7px  rgba(123, 104, 199, 0.2);
 }
-.cardItems:nth-child(n+2) {
+.cardItems:nth-child(n+3) {
     box-shadow: 7px 7px 5px  rgba(123, 104, 199, 0.2);
 }
 
-.cardItems:hover:nth-child(n+2) {
+.cardItems:hover:nth-child(n+3) {
     transform: translateY(-5%);
     box-shadow: 12px 24px 7px  rgba(123, 104, 199, 0.2);
 }

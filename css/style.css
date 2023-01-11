@@ -169,7 +169,7 @@ nav a:hover::after,
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    animation: 4s slideL;
+    /* animation: 4s slideL; A ACTIVIER POUR L'ANIMATION NATIVE */
 }
 
 .div1 img {
@@ -183,7 +183,7 @@ nav a:hover::after,
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: 4s slideUp;
+    /* animation: 4s slideUp; A ACTIVIER POUR L'ANIMATION NATIVE */
 }
 
 .div2 img {
@@ -195,7 +195,7 @@ nav a:hover::after,
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: 4s slideDown;
+    /* animation: 4s slideDown; A ACTIVIER POUR L'ANIMATION NATIVE */
 }
 
 .div3 img {
@@ -208,7 +208,7 @@ nav a:hover::after,
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: 4s slideR;
+    /* animation: 4s slideR; A ACTIVIER POUR L'ANIMATION NATIVE */
 }
 
 .div4 img {
