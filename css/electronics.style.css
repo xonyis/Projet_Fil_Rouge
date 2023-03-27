@@ -143,6 +143,8 @@ nav a:hover::after,
     margin: auto;
   }
 
+  
+
   .small-container {
     width: 75%;
     height: 80vh;
@@ -150,6 +152,7 @@ nav a:hover::after,
     margin: auto;
     margin-top: 3em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     font-family: var(--font-intit);
     overflow: hidden;
@@ -160,8 +163,28 @@ nav a:hover::after,
     border-radius: 25px;
     height: 100%;
     background: white;
+    text-align: center;
+    justify-content: center;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    line-height: 2.5em;
   }
 
+  .sm-bg-div {
+    background-color: #222 !important;
+  }
+
+  .sm-bg-div h2{
+    color: white;
+    width: 60%;
+    line-height: 1em;
+  }
+
+  .sm-bg-div h2 span{
+    
+    color: var(--purple);
+  }
 /* FOOTER */
 
 
