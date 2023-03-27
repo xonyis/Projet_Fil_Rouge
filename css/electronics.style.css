@@ -9,17 +9,18 @@
     --pastel: #dec0f1;
     --light-purple: #957fef;
     --purple: #6247aa;
-    --dark: #102b3f;
+    --dark: #1D1D1F;
     
     --font-intit: 'Inter', sans-serif;
 }
 
 body {
     font-size: 14px;
+    background: #F5F5F7;
 }
 
 nav {
-    margin-top: 1em;
+    margin-top: 2em;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -35,9 +36,9 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #102b3f;
+    color: var(--dark);
     font-family: var(--font-intit);
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
     display: block;
@@ -80,7 +81,86 @@ nav a:hover::after,
 
 /* ==================== */
 
+.main-container {
+  width: 75%;
+  height: 110vh;
+  background: white;
+  margin: auto;
+  margin-top: 3em;
+  border-radius: 25px;
+  padding: 2em;
+  font-family: var(--font-intit);
+}
 
+.main-container h2{
+  text-align: center;
+  font-size: 3em;
+  width: 80%;
+  margin: auto;
+}
+
+.main-container img {
+  width: 90%;
+}
+
+.main-parent {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .grid-div1 { grid-area: 1 / 1 / 2 / 2; }
+  .grid-div2 { grid-area: 2 / 1 / 3 / 2; }
+  .grid-div3 { 
+    grid-area: 1 / 2 / 3 / 3;
+    display: flex;
+    justify-content: center;
+}
+  .grid-div4 { grid-area: 1 / 3 / 2 / 4; }
+  .grid-div5 { grid-area: 2 / 3 / 3 / 4; }
+
+
+
+  .recycle-container {
+    width: 75%;
+    height: 80vh;
+    background: white;
+    margin: auto;
+    margin-top: 3em;
+    border-radius: 25px;
+    padding: 2em;
+    font-family: var(--font-intit);
+    overflow: hidden;
+  }
+
+  .recycle-container h2{
+    text-align: center;
+    font-size: 4em;
+    width: 80%;
+    margin: auto;
+  }
+
+  .small-container {
+    width: 75%;
+    height: 80vh;
+    
+    margin: auto;
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-intit);
+    overflow: hidden;
+  }
+  
+  .small-container div {
+    width: 47.5%;
+    border-radius: 25px;
+    height: 100%;
+    background: white;
+  }
 
 /* FOOTER */
 
