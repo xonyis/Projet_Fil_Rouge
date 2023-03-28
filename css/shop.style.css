@@ -94,7 +94,7 @@ a:focus::after{
 .frontL {
     background: #02CD68;
     width: 50%;
-    
+    padding: 1.5em;
     border-right: 3px solid;
     display: flex;
     justify-content: center;
@@ -140,6 +140,24 @@ a:focus::after{
 .frontR img {
     width: 80%;
     height: auto;
+}
+
+@media only screen and (max-width : 1024px) {
+  .frontL h2{
+    font-size: 2.5em;
+  }
+
+  .frontL p {
+    font-size: 0.7em;
+  }
+  .frontL a{
+    font-size: 1em;
+    box-shadow:5px 3px #FEC900;
+
+}
+}
+
+@media only screen and (max-width : 450px) {
 }
 
 /* CATEGORIES */

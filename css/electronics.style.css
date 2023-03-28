@@ -152,7 +152,6 @@ nav a:hover::after,
     margin: auto;
     margin-top: 3em;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     font-family: var(--font-intit);
     overflow: hidden;
@@ -177,14 +176,25 @@ nav a:hover::after,
 
   .sm-bg-div h2{
     color: white;
-    width: 60%;
+    width: 70%;
     line-height: 1em;
   }
 
   .sm-bg-div h2 span{
-    
     color: var(--purple);
   }
+
+@media only screen and (max-width : 1024px) {
+  .small-container {
+    font-size: 7px;
+    height: 50vh;
+  }
+
+}
+
+@media only screen and (max-width : 450px) {
+
+}
 /* FOOTER */
 
 
